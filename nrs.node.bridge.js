@@ -30,7 +30,8 @@ exports.load = function(callback) {
             global.jQuery = require("jquery")(window);
             global.$ = global.jQuery;
             $.t = function(text) { return text; };
-            global.crypto = require("crypto");
+            // jsdom 中 window.crypto无效，因此引入外部package
+            window.crypto = require('@trust/webcrypto');
             global.CryptoJS = require("crypto-js");
             global.async = require("async");
             global.pako = require("pako");

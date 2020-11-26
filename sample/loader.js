@@ -5,7 +5,7 @@ try {
 }
 
 /*try {
-    loader = require("nxt-blockchain"); // when using the NPM module
+    loader = require("mw-blockchain"); // when using the NPM module
 } catch(e) {
     console.log("Development mode");
 }*/
